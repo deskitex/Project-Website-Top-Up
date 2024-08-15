@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Game Up</title>
+    <link rel="icon" href="assets/logo.png" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Awesome Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>.container {
+      padding: 2rem 0rem;
+    }
+    
+    @media (min-width: 576px) {
+      .modal-dialog {
+        max-width: 400px;
+      }
+      .modal-dialog .modal-content {
+        padding: 1rem;
+      }
+    }
+    .modal-header .close {
+      margin-top: -1.5rem;
+    }
+    
+    .form-title {
+      margin: -2rem 0rem 2rem;
+    }
+    
+    .btn-round {
+      border-radius: 3rem;
+    }
+    
+    .delimiter {
+      padding: 1rem;
+    }
+    
+    .social-buttons .btn {
+      margin: 0 0.5rem 1rem;
+    }
+    
+    .signup-section {
+      padding: 0.3rem 0rem;
+    }
+    .modal.in {
+    background-color: rgba(0,0,0,0);
+}
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Button trigger modal -->
+    <header>
+      <nav>
+        <a class="title" href="#">TopGameUp</a>
+        <div style="width: 100%; position: relative;">
+          <div class="input-group">
+            <input type="search" placeholder="Cari Produk..." autocomplete="off" id="input-box"/>
+            <button class="input-button"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="result-box">
+            <!-- <a href="">Mobile Legend</a>
+            <a href="">Mobile Legend</a> -->
+          </div>
+        </div>
+        
+
+        <a href="#game" class="nav-title">
+          <i class="fa-solid fa-gamepad"></i>
+          Game
+        </a>
+        <a href="#voucher" class="nav-title">
+          <i class="fa-solid fa-ticket"></i>
+          Voucher
+        </a>
+        <a href="#pulsa" class="nav-title">
+          <i class="fa-solid fa-credit-card"></i>
+          Pulsa
+        </a>
+        <button type="button" data-toggle="modal" data-target="#loginModal">Masuk/Daftar</button>
+        <!-- <button class="title" style="background-color: transparent; border: 0; padding: 0; margin: 0 1rem;">
+            <i class="fa-solid fa-bars"></i>
+          </button> -->
+      </nav>
+    </header>
+
+    <main class="mt-5">
+      <div class="banner-cont">
+        <a href="">
+          <img
+            src="assets/banner/ML.png"
+            alt="Mobile Legend"
+            class="banner-image"
+          />
+        </a>
+        <a href="">
+          <img
+            src="assets/banner/GI.jpg"
+            alt="Genshin Impact"
+            class="banner-image"
+          />
+        </a>
+        <a href="">
+          <img
+            src="assets/banner/HSR.jpg"
+            alt="Honkai Star Rail"
+            class="banner-image"
+          />
+        </a>
+        <a href="">
+          <img
+            src="assets/banner/HI3.jpg"
+            alt="Honkai Impact 3"
+            class="banner-image"
+          />
+        </a>
+        <a href="">
+          <img
+            src="assets/banner/HI3.jpg"
+            alt="Honkai Impact 3"
+            class="banner-image"
+          />
+        </a>
+        <a href="">
+          <img
+            src="assets/banner/HI3.jpg"
+            alt="Honkai Impact 3"
+            class="banner-image"
+          />
+        </a>
+        <a href="">
+          <img
+            src="assets/banner/HI3.jpg"
+            alt="Honkai Impact 3"
+            class="banner-image"
+          />
+        </a>
+        <a href="">
+          <img
+            src="assets/banner/HI3.jpg"
+            alt="Honkai Impact 3"
+            class="banner-image"
+          />
+        </a>
+      </div>
+
+      <!-- <div class="title">
+        <i class="fa fa-fire text-danger"></i>
+        Popular
+      </div> -->
+      <div class="title" style="margin: 2rem">
+        <i class="fa fa-bolt text-warning"></i>
+        Flash Sale
+      </div>
+      <div class="container-fluid">
+        <!-- Flash Sale -->
+        <div class="container-fluid">
+          <div class="flash-cont">
+            <a href="">
+              <div class="flash-desc-container">
+                <img
+                  src="assets/banner/ML.png"
+                  alt="Mobile Legend"
+                  class="thumbnail-flash"
+                />
+
+                <div class="flash-desc">
+                  <img
+                    src="assets/thumbnail/ML.png"
+                    alt="Mobile Legend"
+                    class="icon-flash"
+                  />
+                  <article class="title-flash">
+                    <h6>Mobile Legend</h6>
+                    <p>Weekly Diamond Pass</p>
+                  </article>
+                </div>
+                <article class="disc-flash">
+                  <h6>Rp. 25.600</h6>
+                  <p class="text-danger">Rp. 30.000</p>
+                </article>
+                <div class="disc-perc">
+                  <h6>-16%</h6>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="flash-desc-container">
+                <img
+                  src="assets/banner/GI.jpg"
+                  alt="Genshin Impact"
+                  class="thumbnail-flash"
+                />
+
+                <div class="flash-desc">
+                  <img
+                    src="assets/thumbnail/GENSHIN.png"
+                    alt="Genshin Impact"
+                    class="icon-flash"
+                  />
+                  <article class="title-flash">
+                    <h6>Genshin Impact</h6>
+                    <p>Blessin Of Welkin Moon</p>
+                  </article>
+                </div>
+                <article class="disc-flash">
+                  <h6>Rp. 25.600</h6>
+                  <p class="text-danger">Rp. 30.000</p>
+                </article>
+                <div class="disc-perc">
+                  <h6>-16%</h6>
+                </div>
+              </div>
+            </a>
+            <a href="">
+              <div class="flash-desc-container">
+                <img
+                  src="assets/banner/HSR.jpg"
+                  alt="Honkai Star Rail"
+                  class="thumbnail-flash"
+                />
+
+                <div class="flash-desc">
+                  <img
+                    src="assets/thumbnail/HSR.png"
+                    alt="Honkai Star Rail"
+                    class="icon-flash"
+                  />
+                  <article class="title-flash">
+                    <h6>Honkai Star Rail</h6>
+                    <p>Express Supply Pass</p>
+                  </article>
+                </div>
+                <article class="disc-flash">
+                  <h6>Rp. 25.600</h6>
+                  <p class="text-danger">Rp. 30.000</p>
+                </article>
+                <div class="disc-perc">
+                  <h6>-16%</h6>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Flash Sale -->
+        <!-- Game -->
+        <div class="title" style="margin: 2rem">
+          <i class="fa-solid fa-gamepad text-primary"></i>
+          Game
+        </div>
+        <div id="game" class="popular-game container mt-3">
+          <div class="grid-thumbnail gap-3">
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/thumbnail/ML.png"
+                alt="Mobile Legend"
+                class="thumbnail-img"
+              />
+              <article class="title-game">
+                <h6>Mobile Legend</h6>
+                <p>Moonton</p>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/thumbnail/GENSHIN.png"
+                alt="Genshin Impact"
+                class="thumbnail-img"
+              />
+              <article class="title-game">
+                <h6>Genshin Impact</h6>
+                <p>Hoyoverse</p>
+              </article>
+            </a>
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/thumbnail/HSR.png"
+                alt="Honkai Star Rail"
+                class="thumbnail-img"
+              />
+              <article class="title-game">
+                <h6>Honkai Star Rail</h6>
+                <p>Hoyoverse</p>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/thumbnail/FF.png"
+                alt="Free Fire"
+                class="thumbnail-img"
+              />
+              <article class="title-game">
+                <h6>Free Fire</h6>
+                <p>Garena</p>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/thumbnail/HI3.png"
+                alt="Honkai Impact 3"
+                class="thumbnail-img"
+              />
+              <article class="title-game">
+                <h6>Honkai Impact 3</h6>
+                <p>Hoyoverse</p>
+              </article>
+            </a>
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/thumbnail/Zenless.png"
+                alt="Zenless Zone Zero"
+                class="thumbnail-img"
+              />
+              <article class="title-game">
+                <h6>Zenless Zone Zero</h6>
+                <p>Hoyoverse</p>
+              </article>
+            </a>
+          </div>
+        </div>
+        <!-- Game -->
+
+        <!-- Voucher -->
+        <div id="voucher" class="title" style="margin: 2rem">
+          <i class="fa-solid fa-ticket text-success"></i>
+          Voucher
+        </div>
+        <div class="popular-game container mt-3">
+          <div class="grid-thumbnail gap-3">
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/voucher/BS.png"
+                alt="Bstation"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>BStation</h6>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/voucher/GP.png"
+                alt="Google Play"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Google Play</h6>
+              </article>
+            </a>
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/voucher/N.png"
+                alt="Netflix"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Netflix</h6>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/voucher/PS.png"
+                alt="Playstation"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Playstation</h6>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/voucher/ST.png"
+                alt="Steam"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Steam</h6>
+              </article>
+            </a>
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/voucher/Vidio.png"
+                alt="Vidio"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Vidio</h6>
+              </article>
+            </a>
+          </div>
+        </div>
+        <!-- Voucher -->
+
+        <!-- Pulsa -->
+        <div id="pulsa" class="title" style="margin: 2rem">
+          <i class="fa-solid fa-credit-card text-info"></i>
+          Pulsa
+        </div>
+        <div class="popular-game container mt-3">
+          <div class="grid-thumbnail gap-3">
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/pulsa/Axis.png"
+                alt="Axis"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Axis</h6>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/pulsa/Indo.png"
+                alt="Indosat"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Indosat</h6>
+              </article>
+            </a>
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/pulsa/Smart.png"
+                alt="Smartfren"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Smartfren</h6>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/pulsa/Telkom.png"
+                alt="Telkomsel"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Telkomsel</h6>
+              </article>
+            </a>
+
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/pulsa/Tri.png"
+                alt="Tri"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>Tri</h6>
+              </article>
+            </a>
+            <a href="" class="thumbnail-cont">
+              <img
+                src="assets/pulsa/XL.png"
+                alt="XL"
+                class="thumbnail-img voucher"
+              />
+              <article class="title-game title-voucher">
+                <h6>XL</h6>
+              </article>
+            </a>
+          </div>
+        </div>
+        <!-- Pulsa -->
+      </div>
+    </main>
+
+   
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-title text-center">
+              <h4>Login</h4>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                </div>
+                <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+              </form>
+              
+              <div class="text-center text-muted delimiter">or use a social network</div>
+              <div class="d-flex justify-content-center social-buttons">
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <div class="signup-section">Not a member yet? <a href="#l" class="text-info" data-toggle="modal"  data-bs-dismiss="modal" data-target="#signUpModal"> Sign Up</a>.</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="signUpModal" tabindex="-1" >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-title text-center">
+              <h4>Sign Up</h4>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <form>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                </div>
+                <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+              </form>
+              
+              <div class="text-center text-muted delimiter">or use a social network</div>
+              <div class="d-flex justify-content-center social-buttons">
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                  <i class="fab fa-twitter"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                  <i class="fab fa-facebook"></i>
+                </button>
+                <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                  <i class="fab fa-linkedin"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+          </div>
+      </div>
+    </div>
+
+    
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery -->
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+<!-- Popper JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+<!-- Bootstrap JS -->
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
